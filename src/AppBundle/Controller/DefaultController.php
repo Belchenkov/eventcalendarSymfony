@@ -18,4 +18,16 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
         ]);
     }
+
+    /**
+     * @Route("/edit", name="homepage")
+     */
+    public function indexEdit(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/edit.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+        ]);
+    }
+
 }
